@@ -1,0 +1,193 @@
+.form-table.business-messenger input[type=text] {
+    width: 100%;
+}
+
+.message {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.message .message-content {
+    border-radius: 7.5px;
+    box-shadow: 0 1px 0.5px rgba(0,0,0,.13);
+    padding: 10px 20px;
+    position: relative;
+}
+
+.message.user .message-content {
+    background: #f2f2f2;
+    float: left;
+}
+
+.message .message-content:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0px;
+    border: 8px solid;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+    position: absolute;
+    top: 10px;
+}
+
+.message.user .message-content:after {
+    left: -8px;
+    border-left: 0;
+    border-color: #f2f2f2;
+}
+
+.message.bot .message-content:after {
+    right: -8px;
+    border-right: 0;
+    border-color: #0099ff;
+}
+
+.message.bot .message-content {
+    float: right;
+    background: #0099ff;
+    color: #fff;
+}
+
+.message .date-time {
+    display: inline-block;
+    padding: 2px 5px;
+    background: #000;
+    color: #fff;
+    font-size: x-small;
+    border-radius: 7.5px;
+    transition: all 0.2s ease;
+    margin-top: 5px;
+    opacity: 0;
+}
+
+.message.user .date-time {
+    float: left;
+    margin-left: 10px;
+}
+
+.message.bot .date-time {
+    float: right;
+    margin-right: 10px;
+}
+
+.message:hover .date-time {
+    opacity: 1;
+}
+
+.chat-reply {
+    padding-top: 20px;
+}
+
+.chat-reply #publishing-action {
+    float: none;
+    margin-top: 20px;
+}
+
+.chat-reply textarea {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.chat-info {
+    padding-top: 6px;
+}
+
+.chat-info .user-image {
+    display: block;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chat-info .user-info {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    font-size: larger;
+}
+
+.message-badge {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #63a824;
+    border-radius: 50%;
+    line-height: 17px;
+}
+
+.message-badge.new {
+    background: #63a824;
+}
+
+.dashicons, .dashicons-before:before {
+    text-decoration: none !important;
+}
+
+.message .message-content a > img{
+    display: block;
+    background: #fff;
+    padding: 5px 10px;
+    max-width: 200px;
+    max-height: 250px;
+}
+
+.date-separator {
+    text-align: center;
+    display: block;
+    margin: 20px 0 10px;
+    font-size: smaller;
+}
+
+.date-separator:before, .date-separator:after {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 5%;
+    background: #ccc;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.elements-list {
+    position: relative;
+    left: -12px;
+    top: -11px;
+    width: calc(100% + 24px);
+    margin: auto;
+    margin-bottom: -24px;
+    border-collapse: collapse;
+}
+
+.elements-list tr td, .elements-list tr th {
+    padding: 10px;
+    padding-right: 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.elements-list tr td:last-child, .elements-list tr th:last-child {
+    padding-right: 10px;
+}
+
+.elements-list tr:last-child td, .elements-list tr:last-child th {
+    border: 0;
+}
+
+.elements-list a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.elements-list tr.alternative {
+    background: rgba(237, 20, 61, 0.2);
+}
+
+
+
